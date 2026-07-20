@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>Harshitha| Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Full-stack web developer specializing
+          in React. Available for freelance projects."
+    />
+    <meta
+      name="keywords"
+      content="web developer, React, JavaScript, portfolio"
+    />
+    <meta name="author" content="Harshitha" />
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="Harshitha | Web Developer" />
+    <meta
+      property="og:description"
+      content="Check out my portfolio and projects!"
+    />
+    <meta property="og:image" content="https://harshitha.com/preview.jpg" />
+    <meta property="og:url" content="https://harshitha.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Harshitha | Web Developer" />
+    <meta name="twitter:description" content="Check out my portfolio!" />
+    <link rel="icon" href="my photo.jpeg" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">EH</div>
+        <ul class="nav-link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#contact">Contact </a></li>
+        </ul>
+        <button
+          class="theme-toogle"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          🌙
+        </button>
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          title="menu toggler"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero-section">
+        <h1>Hi, I am Harshitha 👋</h1>
+        <p>I am a passionate web developer from Bengaluru</p>
+        <div class="hero-button">
+          <a href="#Projects"> view my work</a>
+          <a href="#contact">
+            Contact
+            <menu></menu
+          ></a>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About me</h2>
+        <figure class="profile-figure">
+          <img
+            src="../cls assignments/my photo.jpeg"
+            alt=" Harshitha profile photo"
+            width="200px"
+            height="200px"
+          />
+          <figcaption>Harshitha Web developer</figcaption>
+          <p>I am a passionate web developer</p>
+        </figure>
+      </section>
+      <section id="skills" class="skills-section">
+        <h2>My skills</h2>
+        <div class="skill-grid">
+          <div class="skill-item" data-level="90">HTML</div>
+          <div class="skill-item" data-level="80">CSS</div>
+          <div class="skill-item" data-level="75">Javascript</div>
+          <div class="skill-item" data-level="60">React</div>
+        </div>
+      </section>
+      <section id="Projects" class="project-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-category="web">
+            <img
+              src="weather app.avif"
+              alt="Weather app screenshot"
+              width="300px"
+              height="300px"
+            />
+            <h3>Weather App</h3>
+            <p>Real-time weather dashboard using openweather API</p>
+            <div class="project_tags">
+              <span>React</span>
+              <span>API</span>
+            </div>
+            <a href="#">Live Demo</a>
+            <a href="#">GitHub</a>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Get in touch</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" required />
+          </div>
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg" required></textarea>
+          </div>
+          <button type="submit">
+            <div class="btn btn-group"></div>
+            Send message
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy;Harshitha.Built with HTML & CSS & ❤️</p>
+      <nav aria-label="Social media links">
+        <a href="https://github.com/harshithaendla" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/harshitha-endla-21370b369" target="_blank">Linkedin</a>
+      </nav>
+    </footer>
+  </body>
+</html>

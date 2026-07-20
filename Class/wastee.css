@@ -1,0 +1,64 @@
+  /* element selector  */
+  h2{
+    color: purple;
+}
+/* class selector */
+.skills-section{
+    color: blue;
+}
+/* id selector */
+#learning{
+    color:red;
+}
+/* universal selector */
+*{
+    background-color:lightblue;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* group selector */
+h1,h2,h3{
+    color: orange;
+}
+.one{
+    font-size: 32px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 30px;
+
+}
+.two{
+    color: white;
+    font-size: 2em;
+    background-color: black;
+}
+.three{
+    font-size: 3rem;
+}
+p{
+    text-align:justify;
+    line-height: 30px;
+}
+.har:hover{
+    text-decoration:underline ;
+    color: blue;
+    font-size: 30px;
+    border: 2px blue dotted;
+}
+a:visited{
+    color: red;
+}
+a:active{
+    color: yellow;
+}
+input:focus{
+    background-color: yellow;
+    width: 250px;
+}
+.love:firstchild{
+    color:white;
+}
