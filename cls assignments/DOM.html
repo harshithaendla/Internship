@@ -31,7 +31,6 @@
     <meta name="twitter:title" content="Harshitha | Web Developer" />
     <meta name="twitter:description" content="Check out my portfolio!" />
     <link rel="icon" href="my photo.jpeg" />
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -86,7 +85,7 @@
         </figure>
       </section>
       <section id="skills" class="skills-section">
-        <h2>My skills</h2>
+        <h2 class="heading">My skills</h2>
         <div class="skill-grid">
           <div class="skill-item" data-level="90">HTML</div>
           <div class="skill-item" data-level="80">CSS</div>
@@ -115,20 +114,34 @@
           </article>
           <article class="project-card" data-category="web">
             <img
-              src="travelexplorer.jpg" alt="Travel explorer app screenshot" width="300px" height="300px" />
+              src="travelexplorer.jpg"
+              alt="Travel explorer app screenshot"
+              width="300px"
+              height="300px"
+            />
             <h3>Travel explorer App</h3>
-            <p>A travel website featuring popular destinations,tour packages,photo gallery and a contact form</p>
+            <p>
+              A travel website featuring popular destinations,tour
+              packages,photo gallery and a contact form
+            </p>
             <div class="project_tags">
               <span>React</span>
-              <span>API</span> 
+              <span>API</span>
             </div>
             <a href="#">Live Demo</a>
             <a href="#">GitHub</a>
           </article>
           <article class="project-card" data-category="web">
-            <img src="attendance 2.png" alt="student attendance portal" width="300px" height="300px">
+            <img
+              src="attendance 2.png"
+              alt="student attendance portal"
+              width="300px"
+              height="300px"
+            />
             <h3>Student attendance portal</h3>
-            <p>A website to display student attendance records and class details</p>
+            <p>
+              A website to display student attendance records and class details
+            </p>
             <div class="project_tags">
               <span>React</span>
               <span>API</span>
@@ -150,6 +163,10 @@
             <input type="email" id="mail" name="mail" required />
           </div>
           <div class="form-group">
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw" required>
+          </div>
+          <div class="form-group">
             <label for="msg">Message</label>
             <textarea name="msg" id="msg" required></textarea>
           </div>
@@ -163,9 +180,37 @@
       <p>&copy;Harshitha.Built with HTML & CSS & ❤️</p>
       <nav aria-label="Social media links">
         <a href="https://github.com/harshithaendla" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/harshitha-endla-21370b369" target="_blank">Linkedin</a>
+        <a
+          href="https://www.linkedin.com/in/harshitha-endla-21370b369"
+          target="_blank"
+          >Linkedin</a
+        >
       </nav>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      let element = document.querySelector(".hero-section")
+      let parent = element.parentElement
+      console.log(parent);
+      let childern = element.children
+      console.log(childern);
+      let sibling = element.nextElementSibling
+      console.log(sibling);
+      let first = element.firstElementChild
+      console.log(first);
+
+
+      let ramaiah=document.querySelector(".skills-section")
+      console.log(ramaiah.textContent);
+      console.log(ramaiah.innerHTML);
+      console.log(ramaiah.id);
+      ramaiah.textContent="javascript DOM"
+      ramaiah.innerHTML="Title with <span> HTML</span>"
+      console.log(ramaiah.innerHTML)
+      ramaiah.style.color="Red"
+      ramaiah.style.fontSize="2rem"
+      ramaiah.setAttribute('id','myskills')
+      console.log(ramaiah.id);
+      
+    </script>
   </body>
 </html>
