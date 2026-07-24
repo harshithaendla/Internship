@@ -210,6 +210,21 @@
       ramaiah.style.fontSize="2rem"
       ramaiah.setAttribute('id','myskills')
       console.log(ramaiah.id);
+
+
+      let ruas=document.createElement("div")
+      ruas.className="project-card"
+      ruas.innerHTML=`<img src="my photo.jpeg" alt="my photooo">
+      <div class="project-body">
+        <h3> New project </h3>
+        <p> This is created by javascript</p1>
+      </div>`
+      let addproject=document.querySelector(".projects-grid")
+      addproject.prependChild(ruas)
+
+
+
+
       
     </script>
   </body>
